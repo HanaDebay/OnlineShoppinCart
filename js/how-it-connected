@@ -1,0 +1,21 @@
+How They Connect Together
+
+
+collection.html + collection.js
+→ Show all products.
+→ Click product → product-details.html?id=....
+
+product-details.html + product.js
+→ Show single product.
+→ Add to Cart → save in localStorage.
+
+cart.html + cart.js
+→ Show cart contents from localStorage.
+→ Update/remove items.
+
+checkout.html + checkout.js
+→ Show final order summary.
+→ Place order → clear cart + confirm.
+
+cart-page.js
+→ Runs on every page to update cart badge (cart-count) in navbar.
