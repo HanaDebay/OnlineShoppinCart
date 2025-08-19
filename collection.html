@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection - Luxe&Lovely</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <!-- Left: Brand Logo -->
+    <a class="navbar-brand fw-bold" href="index.html">Luxe&Lovely</a>
+
+    <!-- Middle: Dropdown Menu -->
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#">Women</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="collection.html?category=women-dresses">Dresses</a></li>
+          <li><a class="dropdown-item" href="collection.html?category=women-jewellery">Jewellery</a></li>
+          <li><a class="dropdown-item" href="collection.html?category=women-shoes">Shoes</a></li>
+          <li><a class="dropdown-item" href="collection.html?category=women-bags">Bags</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#">Men</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="collection.html?category=men-clothes">Clothes</a></li>
+          <li><a class="dropdown-item" href="collection.html?category=men-shoes">Shoes</a></li>
+          <li><a class="dropdown-item" href="collection.html?category=men-watches">Watches</a></li>
+          <li><a class="dropdown-item" href="collection.html?category=men-belts">Belts</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Right: Search + Cart -->
+    <form class="d-flex me-3">
+      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+    </form>
+    <a href="cart.html" class="btn btn-outline-dark position-relative">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+    </a>
+  </div>
+</nav>
+
+<!-- Products Grid -->
+<div class="container my-5">
+  <div class="row" id="collection-grid">
+    <!-- JS will insert product cards here -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg text-light text-center p-4 mt-5">
+  <div class="mb-3">
+    <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+    <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+    <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+    <a href="#" class="text-light"><i class="fab fa-youtube fa-lg"></i></a>
+  </div>
+  <p class="mb-0">&copy; 2025 Luxe&Lovely. All Rights Reserved.</p>
+</footer>
+
+<!-- Scripts -->
+ <script src="js/search.js"></script>
+<script src="js/collection.js"></script> <!-- Then build grid -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
