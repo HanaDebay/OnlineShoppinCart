@@ -14,7 +14,7 @@ const products = [
     { id: 12, name: "Men's Shoes", price: 74.99, image: "images/menshoes1.jpg", category: "men-shoes" }
 ];
 
-// Render products in 3 rows × 4 items
+// Render products items
 const productList = document.getElementById("product-list");
 if (productList) {
     products.forEach(p => {

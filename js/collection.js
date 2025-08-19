@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const grid = document.getElementById("collection-grid");
 
   if (!grid) {
-    console.error("❌ Could not find #collection-grid");
+    console.error("❌ Could not find collection-grid");
     return;
   }
 
