@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: azure;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Dropdown hover effect */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.dropdown-menu {
+  margin-top: 0;
+}
+.navbar{
+  background: linear-gradient(135deg, #4bbcc4ff, #b772c9ff, #41d89eff);
+}
+.bg{
+  background: linear-gradient(135deg, #4bbcc4ff, #b772c9ff, #41d89eff);
+}
