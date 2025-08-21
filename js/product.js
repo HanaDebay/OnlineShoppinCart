@@ -2,23 +2,23 @@
 const urlParams = new URLSearchParams(window.location.search);
 const productId = parseInt(urlParams.get("id"));
 
-// Find product in products array
+// Find product in products array in product-data.js
 const product = products.find(p => p.id === productId);
 
 if (!product) {
   document.body.innerHTML = "<div class='container my-5'><h2>Product not found</h2></div>";
 } else {
-  // Display main product info
+  // Display main product info in product-detail.html page 
   document.getElementById("product-name").textContent = product.name;
   document.getElementById("product-price").textContent = `$${product.price.toFixed(2)}`;
   document.getElementById("product-description").textContent = product.description || "This is a great product you’ll love!";
 
-  // ✅ Set main image
+  // Set main image
   const mainImage = document.getElementById("main-image");
   mainImage.src = product.image;
   mainImage.alt = product.name;
 
-  // ✅ Thumbnails (if multiple images exist, otherwise show the same one)
+  // Thumbnails (if multiple images exist, otherwise show the same one)
   const thumbnailsDiv = document.getElementById("thumbnails");
   thumbnailsDiv.innerHTML = "";
   if (product.images && product.images.length > 0) {
@@ -44,7 +44,7 @@ if (!product) {
     thumbnailsDiv.appendChild(thumb);
   }
 
-  // ✅ Populate color select
+  // Populate color select
   const colorSelect = document.getElementById("color-select");
   if (product.colors) {
     product.colors.forEach(color => {
@@ -55,7 +55,7 @@ if (!product) {
     });
   }
 
-  // ✅ Populate size select
+  // Populate size select
   const sizeSelect = document.getElementById("size-select");
   if (product.sizes) {
     product.sizes.forEach(size => {
@@ -66,7 +66,7 @@ if (!product) {
     });
   }
 
-  // ✅ Add to cart button
+  // Add to cart button
   document.getElementById("add-to-cart").addEventListener("click", () => {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     cart.push({

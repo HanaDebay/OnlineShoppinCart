@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Sample products 
+  
   const products = [
     { id: 1, name: "Red Dress", price: 59.99, image: "images/red-dress1.jpg", description: "Stylish red evening dress." },
     { id: 2, name: "Men's Leather Watch", price: 120.00, image: "images/watch1.jpg", description: "Elegant leather strap watch." },
@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const grid = document.getElementById("collection-grid");
 
   if (!grid) {
-    console.error("❌ Could not find collection-grid");
+    console.error("Could not find collection-grid");
     return;
   }
 
-  // 🔎 Check if there's a search query in the URL
+  //  Check if there's a search query in the URL
   const params = new URLSearchParams(window.location.search);
   const searchQuery = params.get("search");
 

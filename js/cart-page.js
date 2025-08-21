@@ -45,7 +45,7 @@ function renderCart() {
     `;
 
     document.getElementById("cart-total").textContent = total.toFixed(2);
-    updateCartCount();
+    updateCartCount(); //this function is from cart.js page
 }
 
 function updateQuantity(id, quantity) {
